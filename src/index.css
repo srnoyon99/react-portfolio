@@ -1,0 +1,355 @@
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Dancing+Script:wght@400..700&family=Gravitas+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Rubik+Wet+Paint&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@utility container {
+  padding-inline: 1rem ;
+  margin-inline: auto;
+}
+
+@layer base {
+  body {
+    background: #FFFFFF;
+    /* color: lab(77.58% -31.59 -27.78 / 0.275); */
+  }
+}
+
+@theme {
+  
+  /* COLOUR */
+  --color-bg: rgba(255, 255, 255, 0.242);
+  --color-themebutton: #ffffff4a;
+  --color-text-p: lab(77.58% -31.59 -27.78 / 0.275);
+  --color-h3: #14183E;
+  --color-black:#080809;
+  --color-information-button: linear-gradient(#FF946D, #FF7D68);
+  --color-linear-login: linear-gradient(90deg, #6366F1 0%, #8B5CF6 50%, #D946EF 100%);
+  /* COLOUR */
+
+  /* CONTAINER */
+  --breakpoint-*: initial;   /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+  --breakpoint-sm: 40rem;    /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+  --breakpoint-md: 48rem;    /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+  --breakpoint-lg: 64rem;    /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+  --breakpoint-xl: 77rem;  /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+  --breakpoint-2xl: 100rem;   /*[ Container wide ÷ 16 = rem ]  [ rem × 16 = px ] */
+   /* CONTAINER */
+
+   /* SHADOW */
+    --shadow-1: 0px 20px 35px  hsla(41, 99%, 47%, 0.189);
+  --shadow-2: 0px 15px 30px rgba(223, 105, 81, 0.304) ;
+  --shadow-3: 0px 2px 10px #0000001f ;
+  --shadow-serviceCard: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  --shadow-destinationCard: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+ --shadow-testimonialCard: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+ --shadow-companyCard: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+
+   /* SHADOW */
+
+   /* FONT FAMILY */
+   --caprasimo: "Caprasimo", serif;
+   --dancing-script: "Dancing Script", cursive;
+   --roboto-condensed:  "Roboto Condensed", sans-serif ;
+   --rubik-wet-paint: "Rubik Wet Paint", system-ui;
+   --rubik-glitch: "Rubik Glitch", system-ui;
+   --poppins:"Poppins", sans-serif;
+   --open-sans:"Open Sans", sans-serif;
+   --volkhov:"Volkhov", serif;
+   --inter:"Inter", sans-serif;
+   --gravitas-one: "Gravitas One", serif;
+   /* FONT FAMILY */
+
+}
+
+.myname {
+    background: linear-gradient(90deg, #ffd6d6 0%, #cdcff8 50%, #f9c2c6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* TEXT ANIMATION DARK 1 */
+
+.webdsin {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION DARK 1 */
+
+/* SM TEXT ANIMATION DARK 1 */
+
+.SMwebdsin {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* SM TEXT ANIMATION DARK 1 */
+
+
+/* TEXT ANIMATION DARK 2 */
+
+ .webdesin {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #ffffff;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION DARK 2 */
+
+
+/* SM TEXT ANIMATION DARK 2 */
+
+ .Smwebdsin {
+            font-size: 40px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #ffffff;
+            -webkit-text-stroke: 3px #ffffff;
+            text-stroke: 3px #ffffff;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesin {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #ffffff;
+                text-stroke: 2px #ffffff;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesin {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* SM TEXT ANIMATION DARK 2 */
+
+/* TEXT ANIMATION LIGHT 1 */
+
+.webdsinlight {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 8px;
+            color: transparent;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdsinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdsinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+
+/* TEXT ANIMATION LIGHT 1 */
+
+/* TEXT ANIMATION LIGHT 2 */
+.webdesinlight {
+            font-size: 70px;
+            font-weight: 900;
+            letter-spacing: 7px;
+            color: #000000;
+            -webkit-text-stroke: 3px #000000;
+            text-stroke: 3px #000000;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 20px;
+            text-shadow: 
+                0 0 20px rgba(255, 255, 255, 0.3),
+                0 0 40px rgba(255, 255, 255, 0.2);
+            animation: floatUpDown 2s ease-in-out infinite;
+            position: relative;
+        }
+
+        @keyframes floatUpDown {
+            0%, 100% {
+                top: -5px;
+            }
+            50% {
+                top: 5px;
+            }
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .webdesinlight {
+                font-size: 50px;
+                letter-spacing: 5px;
+                -webkit-text-stroke: 2px #000000;
+                text-stroke: 2px #000000;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .webdesinlight {
+                font-size: 35px;
+                letter-spacing: 3px;
+            }
+        }
+/* TEXT ANIMATION LIGHT 2 */
