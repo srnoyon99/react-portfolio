@@ -10,22 +10,22 @@ const NavBarDark = () => {
     <div className="navbar-start">
     {/* Dropdown */}
     <div className="dropdown">
-      <div tabIndex={0} role="button" className=" cursor-pointer px-3 py-3 rounded-full bg-[#f9004d] lg:hidden">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-text-align-justify-icon lucide-text-align-justify"><path d="M3 5h18"/><path d="M3 12h18"/><path d="M3 19h18"/></svg>
-      </div>
-      <ul
-        tabIndex="-1"
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-        <li><a>Item 1</a></li>
-        <li>
-          <a>Parent</a>
-          <ul className="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
-          </ul>
-        </li>
-        <li><a>Item 3</a></li>
-      </ul>
+      <div className="drawer lg:hidden ">
+  <input id="my-drawer-1" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
+    {/* Page content here */}
+    <label htmlFor="my-drawer-1" className=" btn outline-transparent border-transparent bg-red-500 rounded-3xl "> 
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4 6h16M4 12h8m-8 6h16" /> </svg> 
+    </label>
+  </div>
+  <div className="drawer-side">
+    <label htmlFor="my-drawer-1" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu bg-amber-50 min-h-full z-10 w-70 p-4">
+      {/* Sidebar content here */}
+      <a className=" cursor-pointer font-extrabold text-2xl text-black text-center "> SR.NOYON </a>
+    </ul>
+  </div>
+</div>
     </div>
      {/* Dropdown */}
 
