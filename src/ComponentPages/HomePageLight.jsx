@@ -17,6 +17,9 @@ const HomePageLight = () => {
 
                <div className=' container  ' >
 
+               {/* DESKTOP */}
+
+               <div className=' hidden lg:block ' >
                     <div className=' container flex items-center justify-between ' >
                          <div className=' grid items-center ' >
                               <div>
@@ -47,7 +50,7 @@ const HomePageLight = () => {
                                         <SocialMediaButton/>
                                    </div>
 
-                                   <p className=' text-slate-600 max-w-[490px] text-[20px] ' > Web Designer & Developer specializing in creating stunning, user-centric digital solutions that drive results.</p>
+                                   <p className=' text-slate-600 max-w-[490px] text-[20px] mt-4 ' > Web Designer & Developer specializing in creating stunning, user-centric digital solutions that drive results.</p>
                               </div>
                          </div>
 
@@ -67,18 +70,70 @@ const HomePageLight = () => {
                          </div>
                     </div>
 
-                    <div className=' flex gap-10 items-center translate-y-[-90px] justify-start absolute '>
-                         <button className='  z-50 ' >
+                    <div className=' flex gap-10 items-center translate-y-[-90px] justify-start'>
+                         <button className='  z-30 ' >
                               <MyworkButton />
                          </button>
-                         <button className='  z-50 ' >
+                         <button className='  z-30' >
                               <DownloadButtonLight />
                          </button>
                     </div>
 
-                    {/* <div className=' absolute mt-5 ' >
-                         <MediaButton/>
-                    </div> */}
+               </div>
+
+               {/* DESKTOP */}
+
+               {/* MOBILE */}
+
+               <div className=' lg:hidden container grid justify-center items-center ' >
+                         <div className=' grid items-center ' >
+
+                              <div className=' container '>
+
+                                   <div className=' text-slate-950 text-[30px] font-extrabold  font-open-sans ' > HELLO </div> 
+
+                                   <div>
+                                        <h1 className=' text-black mt-5 text-5xl font-black font-open-sans ' >I’M Noyon a</h1>
+                                        <br />
+                                        <h1> <TextAnimation /> </h1>
+                                   </div>
+
+                                   <div>
+                                        <SocialMediaButton/>
+                                   </div>
+
+                                   <p className=' text-slate-300 font-bold text-[15px] mt-4 ' > Web Designer & Developer specializing in creating stunning, user-centric digital solutions that drive results.</p>
+                              </div>
+
+                              <div className=' container ml-3 flex gap-10 items-center translate-y-[-140px] justify-start absolute '>
+                         <button className=' z-50 cursor-pointer ' >
+                              <MyworkButton />
+                         </button>
+                         <button className='  z-50 cursor-pointer ' >
+                              <DownloadButtonLight/>
+                         </button>
+                    </div>
+
+                              <div className='relative grid justify-center items-center mt-35 z-10 ' >
+                              <div className='  absolute translate-y-[-190px] ' >
+                                   <h1 className=' smesinlight text-nowrap ' >WEB DEVELOPER
+                                   </h1>
+                              </div>
+
+                              <div className='  relative ' >
+                                   <img className='  overflow-hidden translate-x-28 h-[410px] z-40 ' src={MyPicLightmood} alt="pic" />
+                              </div>
+                              <div className=' relative translate-y-[-100px] z-50 ' >
+                                   <h1 className=' wesinlight text-nowrap '>WEB DEVELOPER
+                                   </h1>
+                              </div>
+                         </div>
+
+                         </div>
+
+                    </div>
+
+               {/* MOBILE */}
 
                </div>
           </section>

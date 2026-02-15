@@ -14,7 +14,7 @@ export default function DownloadButtonLight() {
           href="#"
           onMouseEnter={() => setHoverDownload(true)}
           onMouseLeave={() => setHoverDownload(false)}
-          className="relative inline-flex items-center h-16 w-56 rounded-[20px] overflow-hidden shadow-2xl"
+          className="relative inline-flex items-center h-14 lg:h-16 w-50 lg:w-56 rounded-[20px] overflow-hidden"
           style={{
             background: hoverDownload 
               ? 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)' 
@@ -40,7 +40,7 @@ export default function DownloadButtonLight() {
           
           {/* Icon Circle */}
           <span 
-            className="relative z-10 flex items-center justify-center h-12 w-12 rounded-full "
+            className="relative z-10 flex items-center justify-center h-10 lg:h-12 w-10 lg:w-12 rounded-full "
             style={{
               marginLeft: hoverDownload ? '140px' : '8px',
               background: hoverDownload 
@@ -58,7 +58,7 @@ export default function DownloadButtonLight() {
           
           {/* Default Title */}
           <span 
-            className="absolute font-bold text-black text-lg tracking-wide"
+            className="absolute font-bold text-[14px] lg:text-lg tracking-wide"
             style={{
               left: hoverDownload ? '30px' : '75px',
               opacity: hoverDownload ? 0 : 1,
@@ -72,7 +72,7 @@ export default function DownloadButtonLight() {
           
           {/* Hover Title */}
           <span 
-            className="absolute font-bold text-black text-lg tracking-wide"
+            className="absolute font-bold text-[16px] lg:text-lg tracking-wide"
             style={{
               left: hoverDownload ? '30px' : '60px',
               opacity: hoverDownload ? 1 : 0,
