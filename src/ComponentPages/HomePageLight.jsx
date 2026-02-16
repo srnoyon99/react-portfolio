@@ -102,7 +102,7 @@ const HomePageLight = () => {
                                         <SocialMediaButton/>
                                    </div>
 
-                                   <p className=' text-slate-300 font-bold text-[15px] mt-4 ' > Web Designer & Developer specializing in creating stunning, user-centric digital solutions that drive results.</p>
+                                   <p className=' text-slate-600 font-bold text-[15px] mt-4 ' > Web Designer & Developer specializing in creating stunning, user-centric digital solutions that drive results.</p>
                               </div>
 
                               <div className=' container ml-3 flex gap-10 items-center translate-y-[-140px] justify-start absolute '>
